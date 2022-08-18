@@ -1,0 +1,47 @@
+modLoader="javafml" #mandatory
+loaderVersion="[40,)"
+license="GNU"
+[[mods]] #mandatory
+modId="extendedflywheels"
+version="0.0.1-1.18.2"
+displayName="Extended Flywheels" #mandatory
+logoFile="examplemod.png" #optional
+credits=""
+authors="Rabbitminers" #optional
+description='''
+A small mod to help decorate with create mod through some extra variety of flywheels
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.extendedflywheels]] #optional
+# the modid of the dependency
+modId="forge" #mandatory
+# Does this dependency have to exist - if not, ordering below must be specified
+mandatory=true #mandatory
+# The version range of the dependency
+versionRange="[40,)" #mandatory
+# An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+ordering="NONE"
+# Side this dependency is applied on - BOTH, CLIENT or SERVER
+side="BOTH"
+# Here's another dependency
+[[dependencies.extendedflywheels]]
+modId="minecraft"
+mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="[1.18.2,1.19)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.create]]
+modId="flywheel"
+mandatory=true
+versionRange="[0.5, )"
+ordering="AFTER"
+side="CLIENT"
+
+[[dependencies.create]]
+modId="create"
+mandatory=true
+versionRange="[0.6.5,0.6.6)"
+ordering="AFTER"
+side="BOTH"
