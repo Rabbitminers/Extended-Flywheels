@@ -34,7 +34,7 @@ public class EFBlocks {
                     () -> CreativeModeTab.TAB_BUILDING_BLOCKS
             );
 
-    public static final BlockEntry<FlywheelBlock> TEST_FLYWHEEL_BLOCK = REGISTRATE.block("test_flywheel", FlywheelBlock::new)
+    public static final BlockEntry<FlywheelBlock> flywheel_BLOCK = REGISTRATE.block("flywheel", FlywheelBlock::new)
             .initialProperties(SharedProperties::stone)
             .properties(BlockBehaviour.Properties::noOcclusion)
     //        .transform(pickaxeOnly())
@@ -45,8 +45,6 @@ public class EFBlocks {
             .register();
 
 
-    public static void register() {
-
-    }
+    public static void register() {}
 
 }
