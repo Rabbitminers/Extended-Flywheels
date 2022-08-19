@@ -3,6 +3,7 @@ package com.rabbitminers.extendedflywheels;
 import com.mojang.logging.LogUtils;
 import com.rabbitminers.extendedflywheels.index.EFBlocks;
 import com.rabbitminers.extendedflywheels.index.EFItems;
+import com.rabbitminers.extendedflywheels.index.EFTileEntities;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.repack.registrate.util.nullness.NonNullSupplier;
 import net.minecraft.resources.ResourceLocation;
@@ -13,6 +14,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.server.ServerAboutToStartEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
@@ -44,19 +46,22 @@ public class ExtendedFlywheels
             .networkProtocolVersion(() -> PROTOCOL)
             .simpleChannel();
 
-    /*
     public static final CreativeModeTab itemGroup = new CreativeModeTab(MOD_ID) {
         @Override
         public ItemStack makeIcon() {
-            return null;
+            return new ItemStack(EFBlocks.FLYWHEEL.get());
         }
     };
-    */
+
     public ExtendedFlywheels() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // MinecraftForge.EVENT_BUS.register(this);
+        // MinecraftForge.EVENT_BUS.addListener(this::serverStart);
+
         EFItems.register(eventBus);
         EFBlocks.register();
+        EFTileEntities.register();
 
     }
 
