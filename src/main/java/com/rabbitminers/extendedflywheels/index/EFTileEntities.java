@@ -30,5 +30,13 @@ public class EFTileEntities {
             .register();
 
 
+    public static final BlockEntityEntry<WheelTileEntity> STEELWHEEL = REGISTRATE
+            .tileEntity("steelflywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.STEELWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
     public static void register() {}
 }

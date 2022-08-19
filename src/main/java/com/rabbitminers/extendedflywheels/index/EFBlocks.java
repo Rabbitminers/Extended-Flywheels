@@ -45,7 +45,16 @@ public class EFBlocks {
             .transform(customItemModel())
             .register();
 
-    public static final BlockEntry<WheelBlock> WHEEL = REGISTRATE.block("flywheel", WheelBlock::new)
+    public static final BlockEntry<WheelBlock> WHEEL = REGISTRATE.block("flywheel", WheelBlock::brass)
+            .initialProperties(SharedProperties::softMetal)
+            .properties(BlockBehaviour.Properties::noOcclusion)
+            .blockstate(BlockStateGen.axisBlockProvider(true))
+            .transform(BlockStressDefaults.setNoImpact())
+            .item()
+            .transform(customItemModel())
+            .register();
+
+    public static final BlockEntry<WheelBlock> STEELWHEEL = REGISTRATE.block("steelflywheel", WheelBlock::steel)
             .initialProperties(SharedProperties::softMetal)
             .properties(BlockBehaviour.Properties::noOcclusion)
             .blockstate(BlockStateGen.axisBlockProvider(true))

@@ -15,11 +15,24 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
+import java.util.Objects;
+
 public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTileEntity> {
 
-    public WheelBlock(Properties properties) {
+    String type;
+    protected WheelBlock(String material, Properties properties) {
         super(properties);
+        type = material;
     }
+    public static WheelBlock brass(Properties properties) {
+        return new WheelBlock("brass", properties);
+    }
+
+    public static WheelBlock steel(Properties properties) {
+        return new WheelBlock("steel", properties);
+    }
+
+
 
     @Override
     public Class<WheelTileEntity> getTileEntityClass() {
@@ -38,6 +51,9 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
 
     @Override
     public BlockEntityType<? extends WheelTileEntity> getTileEntityType() {
+        if (Objects.equals(type, "steel")) {
+            return EFTileEntities.STEELWHEEL.get();
+        }
         return EFTileEntities.WHEEL.get();
     }
 
