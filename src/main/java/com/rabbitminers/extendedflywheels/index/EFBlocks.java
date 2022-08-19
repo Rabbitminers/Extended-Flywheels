@@ -2,6 +2,7 @@ package com.rabbitminers.extendedflywheels.index;
 
 import com.rabbitminers.extendedflywheels.ExtendedFlywheels;
 import com.rabbitminers.extendedflywheels.config.EFCommonValues;
+import com.rabbitminers.extendedflywheels.wheel.WheelBlock;
 import com.simibubi.create.content.contraptions.components.flywheel.FlywheelBlock;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.data.BlockStateGen;
@@ -34,7 +35,7 @@ public class EFBlocks {
                     () -> CreativeModeTab.TAB_BUILDING_BLOCKS
             );
 
-    public static final BlockEntry<FlywheelBlock> FLYWHEEL = REGISTRATE.block("flywheel", FlywheelBlock::new)
+    public static final BlockEntry<FlywheelBlock> FLYWHEEL = REGISTRATE.block("wheel", FlywheelBlock::new)
             .initialProperties(SharedProperties::softMetal)
             .properties(BlockBehaviour.Properties::noOcclusion)
     //        .transform(pickaxeOnly())
@@ -44,6 +45,14 @@ public class EFBlocks {
             .transform(customItemModel())
             .register();
 
+    public static final BlockEntry<WheelBlock> WHEEL = REGISTRATE.block("flywheel", WheelBlock::new)
+            .initialProperties(SharedProperties::softMetal)
+            .properties(BlockBehaviour.Properties::noOcclusion)
+            .blockstate(BlockStateGen.axisBlockProvider(true))
+            .transform(BlockStressDefaults.setNoImpact())
+            .item()
+            .transform(customItemModel())
+            .register();
 
     public static void register() {}
 
