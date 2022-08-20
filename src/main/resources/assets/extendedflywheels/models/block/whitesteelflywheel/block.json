@@ -1,0 +1,6 @@
+{
+    "parent": "extendedflywheels:block/whitesteelflywheel/flywheel",
+    "loader": "forge:obj",
+    "flip-v": true,
+    "model": "extendedflywheels:models/block/whitesteelflywheel/flywheel_shaftless.obj"
+}

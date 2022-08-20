@@ -1,0 +1,61 @@
+
+                    case "black":
+                        return EFTileEntities.BLACKSTEELWHEEL.get();
+       
+        
+                    case "gray":
+                        return EFTileEntities.GRAYSTEELWHEEL.get();
+       
+        
+                    case "light_gray":
+                        return EFTileEntities.LIGHT_GRAYSTEELWHEEL.get();
+       
+        
+                    case "white":
+                        return EFTileEntities.WHITESTEELWHEEL.get();
+       
+        
+                    case "red":
+                        return EFTileEntities.REDSTEELWHEEL.get();
+       
+        
+                    case "orange":
+                        return EFTileEntities.ORANGESTEELWHEEL.get();
+       
+        
+                    case "yellow":
+                        return EFTileEntities.YELLOWSTEELWHEEL.get();
+       
+        
+                    case "lime":
+                        return EFTileEntities.LIMESTEELWHEEL.get();
+       
+        
+                    case "green":
+                        return EFTileEntities.GREENSTEELWHEEL.get();
+       
+        
+                    case "cyan":
+                        return EFTileEntities.CYANSTEELWHEEL.get();
+       
+        
+                    case "light_blue":
+                        return EFTileEntities.LIGHT_BLUESTEELWHEEL.get();
+       
+        
+                    case "blue":
+                        return EFTileEntities.BLUESTEELWHEEL.get();
+       
+        
+                    case "magenta":
+                        return EFTileEntities.MAGENTASTEELWHEEL.get();
+       
+        
+                    case "purple":
+                        return EFTileEntities.PURPLESTEELWHEEL.get();
+       
+        
+                    case "pink":
+                        return EFTileEntities.PINKSTEELWHEEL.get();
+       
+        
