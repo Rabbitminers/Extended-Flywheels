@@ -19,20 +19,23 @@ import java.util.Objects;
 
 public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTileEntity> {
 
-    String type;
-    protected WheelBlock(String material, Properties properties) {
+    String type, colour;
+    protected WheelBlock(String material, String paint, Properties properties) {
         super(properties);
         type = material;
+        colour = paint;
     }
-    public static WheelBlock brass(Properties properties) {
-        return new WheelBlock("brass", properties);
-    }
-
-    public static WheelBlock steel(Properties properties) {
-        return new WheelBlock("steel", properties);
+    public static WheelBlock brass(String colour, Properties properties) {
+        return new WheelBlock("brass", colour, properties);
     }
 
+    public static WheelBlock steel(String colour, Properties properties) {
+        return new WheelBlock("steel", colour, properties);
+    }
 
+    public String matchColour(String colour) {
+        return "TODO";
+    }
 
     @Override
     public Class<WheelTileEntity> getTileEntityClass() {
@@ -51,10 +54,81 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
 
     @Override
     public BlockEntityType<? extends WheelTileEntity> getTileEntityType() {
-        if (Objects.equals(type, "steel")) {
-            return EFTileEntities.STEELWHEEL.get();
+
+        switch (type) {
+            case "brass":
+                switch(colour) {
+                    case "black":
+                        return EFTileEntities.BLACKBRASSWHEEL.get();
+                    case "gray":
+                        return EFTileEntities.GRAYBRASSWHEEL.get();
+                    case "light_gray":
+                        return EFTileEntities.LIGHT_GRAYBRASSWHEEL.get();
+                    case "white":
+                        return EFTileEntities.WHITEBRASSWHEEL.get();
+                    case "red":
+                        return EFTileEntities.REDBRASSWHEEL.get();
+                    case "orange":
+                        return EFTileEntities.ORANGEBRASSWHEEL.get();
+                    case "yellow":
+                        return EFTileEntities.YELLOWBRASSWHEEL.get();
+                    case "lime":
+                        return EFTileEntities.LIMEBRASSWHEEL.get();
+                    case "green":
+                        return EFTileEntities.GREENBRASSWHEEL.get();
+                    case "cyan":
+                        return EFTileEntities.CYANBRASSWHEEL.get();
+                    case "light_blue":
+                        return EFTileEntities.LIGHT_BLUEBRASSWHEEL.get();
+                    case "blue":
+                        return EFTileEntities.BLUEBRASSWHEEL.get();
+                    case "magenta":
+                        return EFTileEntities.MAGENTABRASSWHEEL.get();
+                    case "purple":
+                        return EFTileEntities.PURPLEBRASSWHEEL.get();
+                    case "pink":
+                        return EFTileEntities.PINKBRASSWHEEL.get();
+                    default:
+                        return EFTileEntities.WHEEL.get();
+                }
+            case "steel":
+                switch (colour) {
+                    case "black":
+                        return EFTileEntities.BLACKSTEELWHEEL.get();
+                    case "gray":
+                        return EFTileEntities.GRAYSTEELWHEEL.get();
+                    case "light_gray":
+                        return EFTileEntities.LIGHT_GRAYSTEELWHEEL.get();
+                    case "white":
+                        return EFTileEntities.WHITESTEELWHEEL.get();
+                    case "red":
+                        return EFTileEntities.REDSTEELWHEEL.get();
+                    case "orange":
+                        return EFTileEntities.ORANGESTEELWHEEL.get();
+                    case "yellow":
+                        return EFTileEntities.YELLOWSTEELWHEEL.get();
+                    case "lime":
+                        return EFTileEntities.LIMESTEELWHEEL.get();
+                    case "green":
+                        return EFTileEntities.GREENSTEELWHEEL.get();
+                    case "cyan":
+                        return EFTileEntities.CYANSTEELWHEEL.get();
+                    case "light_blue":
+                        return EFTileEntities.LIGHT_BLUESTEELWHEEL.get();
+                    case "blue":
+                        return EFTileEntities.BLUESTEELWHEEL.get();
+                    case "magenta":
+                        return EFTileEntities.MAGENTASTEELWHEEL.get();
+                    case "purple":
+                        return EFTileEntities.PURPLESTEELWHEEL.get();
+                    case "pink":
+                        return EFTileEntities.PINKSTEELWHEEL.get();
+                    default:
+                        return EFTileEntities.STEELWHEEL.get();
+                }
+            default:
+                return EFTileEntities.WHEEL.get();
         }
-        return EFTileEntities.WHEEL.get();
     }
 
     @Override

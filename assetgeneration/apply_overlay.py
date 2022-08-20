@@ -1,6 +1,8 @@
 from PIL import Image
 import os
 
+# Output convention {color}_{material}_flywheel
+
 def generate_assetss(type, pathlist):
     for path in pathlist:
         # print(f"generating: {type}, for {path}")
@@ -8,8 +10,11 @@ def generate_assetss(type, pathlist):
         file_path = str(path)
         overlay = Image.open(file_path).convert("RGBA")
         
+        
+        colour = file_path.split('/', 99)[-1].split('_', 99)[0]
+
         base.paste(overlay, (0,0), mask=overlay)
-        base.save(f"output/{type}_{str(path)[9:]}", "PNG")
+        base.save(f"output/{colour}_{type}.png", "PNG")
 
 
 flywheel_types = ["steel_flywheel", "brass_flywheel"]
