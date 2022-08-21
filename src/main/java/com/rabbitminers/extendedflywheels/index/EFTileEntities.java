@@ -15,23 +15,14 @@ import com.simibubi.create.repack.registrate.util.entry.BlockEntityEntry;
 public class EFTileEntities {
     private static final CreateRegistrate REGISTRATE = ExtendedFlywheels.registrate();
 
-    // TEST IMPLEMENTATION TODO: REMOVE
-
-    public static final BlockEntityEntry<FlywheelTileEntity> FLYWHEEL = REGISTRATE
-            .tileEntity("wheel", FlywheelTileEntity::new)
-            .instance(() -> FlyWheelInstance::new, false)
-            .validBlocks(EFBlocks.FLYWHEEL)
-            .renderer(() -> FlywheelRenderer::new)
-            .register();
-
     // Naming Convention: [COLOUR][MATERIAL]WHEEL
     // Brass Flywheels
 
     // Default
-    public static final BlockEntityEntry<WheelTileEntity> WHEEL = REGISTRATE
+    public static final BlockEntityEntry<WheelTileEntity> FLYWHEEL = REGISTRATE
             .tileEntity("flywheel", WheelTileEntity::new)
             .instance(() -> WheelInstance::new, false)
-            .validBlocks(EFBlocks.WHEEL)
+            .validBlocks(EFBlocks.FLYWHEEL)
             .renderer(() -> WheelRenderer::new)
             .register();
 

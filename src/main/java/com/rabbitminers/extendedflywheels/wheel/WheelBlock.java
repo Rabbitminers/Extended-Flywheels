@@ -89,7 +89,7 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
                     case "pink":
                         return EFTileEntities.PINKBRASSWHEEL.get();
                     default:
-                        return EFTileEntities.WHEEL.get();
+                        return EFTileEntities.FLYWHEEL.get();
                 }
             case "steel":
                 switch (colour) {
@@ -127,7 +127,7 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
                         return EFTileEntities.STEELWHEEL.get();
                 }
             default:
-                return EFTileEntities.WHEEL.get();
+                return EFTileEntities.FLYWHEEL.get();
         }
     }
 

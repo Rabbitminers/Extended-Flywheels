@@ -1,8 +1,8 @@
 {
-    "parent": "extendedflywheels:block/white_steel_flywheel/flywheel",
+    "parent": "extendedflywheels:block/whitesteelflywheel/flywheel",
     "loader": "forge:obj",
     "flip-v": true,
-    "model": "extendedflywheels:models/block/white_steel_flywheel/flywheel.obj",
+    "model": "extendedflywheels:models/block/common/flywheel.obj",
     "display": {
         "gui": {
             "rotation": [30, 225, 0],

@@ -2,7 +2,7 @@
 	"parent": "extendedflywheels:block/flywheel/flywheel",
 	"loader": "forge:obj",
 	"flip-v": true,
-	"model": "extendedflywheels:models/block/flywheel/flywheel.obj",
+	"model": "extendedflywheels:models/block/common/flywheel.obj",
 	"display": {
         "gui": {
         	"rotation": [ 30, 225, 0 ],

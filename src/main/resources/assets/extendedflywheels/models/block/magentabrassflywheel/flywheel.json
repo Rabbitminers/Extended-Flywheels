@@ -1,0 +1,12 @@
+
+{
+    "parent": "block/block",
+    "ambientocclusion": false,
+    "textures": {
+        "0": "extendedflywheels:block/magenta_brass_flywheel",
+        "1": "extendedflywheels:block/axis",
+        "2": "extendedflywheels:block/axis_top",
+        "particle": "extendedflywheels:block/flywheel"
+    }
+}
+    

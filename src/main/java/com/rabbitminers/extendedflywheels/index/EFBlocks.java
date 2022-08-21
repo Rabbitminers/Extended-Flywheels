@@ -40,22 +40,11 @@ public class EFBlocks {
                     () -> CreativeModeTab.TAB_BUILDING_BLOCKS
             );
 
-    // TEST IMPLEMENTATION TODO: REMOVE
-    public static final BlockEntry<FlywheelBlock> FLYWHEEL = REGISTRATE.block("wheel", FlywheelBlock::new)
-            .initialProperties(SharedProperties::softMetal)
-            .properties(BlockBehaviour.Properties::noOcclusion)
-            //        .transform(pickaxeOnly())
-            .blockstate(BlockStateGen.axisBlockProvider(true))
-            .transform(BlockStressDefaults.setNoImpact())
-            .item()
-            .transform(customItemModel())
-            .register();
-
     // Naming Convention: [COLOUR][MATERIAL]WHEEL
     // Brass Flywheels
 
     // Default
-    public static final BlockEntry<WheelBlock> WHEEL =
+    public static final BlockEntry<WheelBlock> FLYWHEEL =
             REGISTRATE.block("flywheel", p -> WheelBlock.brass("none", p))
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
