@@ -17,7 +17,7 @@ def generate_assetss(type, pathlist):
         base.save(f"output/{colour}_{type}.png", "PNG")
 
 
-flywheel_types = ["steel_flywheel", "brass_flywheel"]
+flywheel_types = ["iron_flywheel"]
 filelist = []
 
 for root, dirs, files in os.walk("overlays"):

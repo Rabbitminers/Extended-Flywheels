@@ -33,6 +33,10 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
         return new WheelBlock("steel", colour, properties);
     }
 
+    public static WheelBlock iron(String colour, Properties properties) {
+        return new WheelBlock("iron", colour, properties);
+    }
+
     public String matchColour(String colour) {
         return "TODO";
     }
@@ -125,6 +129,41 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
                         return EFTileEntities.PINKSTEELWHEEL.get();
                     default:
                         return EFTileEntities.STEELWHEEL.get();
+                }
+            case "iron":
+                switch (colour) {
+                    case "black":
+                        return EFTileEntities.BLACKIRONWHEEL.get();
+                    case "gray":
+                        return EFTileEntities.GRAYIRONWHEEL.get();
+                    case "light_gray":
+                        return EFTileEntities.LIGHT_GRAYIRONWHEEL.get();
+                    case "white":
+                        return EFTileEntities.WHITEIRONWHEEL.get();
+                    case "red":
+                        return EFTileEntities.REDIRONWHEEL.get();
+                    case "orange":
+                        return EFTileEntities.ORANGEIRONWHEEL.get();
+                    case "yellow":
+                        return EFTileEntities.YELLOWIRONWHEEL.get();
+                    case "lime":
+                        return EFTileEntities.LIMEIRONWHEEL.get();
+                    case "green":
+                        return EFTileEntities.GREENIRONWHEEL.get();
+                    case "cyan":
+                        return EFTileEntities.CYANIRONWHEEL.get();
+                    case "light_blue":
+                        return EFTileEntities.LIGHT_BLUEIRONWHEEL.get();
+                    case "blue":
+                        return EFTileEntities.BLUEIRONWHEEL.get();
+                    case "magenta":
+                        return EFTileEntities.MAGENTAIRONWHEEL.get();
+                    case "purple":
+                        return EFTileEntities.PURPLEIRONWHEEL.get();
+                    case "pink":
+                        return EFTileEntities.PINKIRONWHEEL.get();
+                    default:
+                        return EFTileEntities.IRONWHEEL.get();
                 }
             default:
                 return EFTileEntities.FLYWHEEL.get();

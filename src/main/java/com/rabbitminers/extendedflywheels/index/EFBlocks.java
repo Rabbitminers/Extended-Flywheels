@@ -37,7 +37,7 @@ public class EFBlocks {
     private static final CreateRegistrate REGISTRATE = ExtendedFlywheels
             .registrate()
             .creativeModeTab(
-                    () -> CreativeModeTab.TAB_BUILDING_BLOCKS
+                    () -> ExtendedFlywheels.itemGroup
             );
 
     // Naming Convention: [COLOUR][MATERIAL]WHEEL
@@ -431,7 +431,200 @@ public class EFBlocks {
                     .transform(customItemModel())
                     .register();
 
+    // Iron Flywheels
 
+    // Default
+    public static final BlockEntry<WheelBlock> IRONWHEEL =
+            REGISTRATE.block("ironflywheel", p -> WheelBlock.iron("none", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    // Dyed
+
+
+
+    public static final BlockEntry<WheelBlock> BLACKIRONWHEEL =
+            REGISTRATE.block("black_iron_flywheel", p -> WheelBlock.iron("black", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> GRAYIRONWHEEL =
+            REGISTRATE.block("gray_iron_flywheel", p -> WheelBlock.iron("gray", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> LIGHT_GRAYIRONWHEEL =
+            REGISTRATE.block("light_gray_iron_flywheel", p -> WheelBlock.iron("light_gray", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> WHITEIRONWHEEL =
+            REGISTRATE.block("white_iron_flywheel", p -> WheelBlock.iron("white", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> REDIRONWHEEL =
+            REGISTRATE.block("red_iron_flywheel", p -> WheelBlock.iron("red", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> ORANGEIRONWHEEL =
+            REGISTRATE.block("orange_iron_flywheel", p -> WheelBlock.iron("orange", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> YELLOWIRONWHEEL =
+            REGISTRATE.block("yellow_iron_flywheel", p -> WheelBlock.iron("yellow", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> LIMEIRONWHEEL =
+            REGISTRATE.block("lime_iron_flywheel", p -> WheelBlock.iron("lime", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> GREENIRONWHEEL =
+            REGISTRATE.block("green_iron_flywheel", p -> WheelBlock.iron("green", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> CYANIRONWHEEL =
+            REGISTRATE.block("cyan_iron_flywheel", p -> WheelBlock.iron("cyan", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> LIGHT_BLUEIRONWHEEL =
+            REGISTRATE.block("light_blue_iron_flywheel", p -> WheelBlock.iron("light_blue", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> BLUEIRONWHEEL =
+            REGISTRATE.block("blue_iron_flywheel", p -> WheelBlock.iron("blue", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> MAGENTAIRONWHEEL =
+            REGISTRATE.block("magenta_iron_flywheel", p -> WheelBlock.iron("magenta", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> PURPLEIRONWHEEL =
+            REGISTRATE.block("purple_iron_flywheel", p -> WheelBlock.iron("purple", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+
+    public static final BlockEntry<WheelBlock> PINKIRONWHEEL =
+            REGISTRATE.block("pink_iron_flywheel", p -> WheelBlock.iron("pink", p))
+                    .initialProperties(SharedProperties::softMetal)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .item()
+                    .transform(customItemModel())
+                    .register();
 
     public static void register() {}
 

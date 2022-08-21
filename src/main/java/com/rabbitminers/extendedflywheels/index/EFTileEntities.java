@@ -307,6 +307,151 @@ public class EFTileEntities {
             .register();
 
 
+    // Iron Flywheels
+
+    // Default
+    public static final BlockEntityEntry<WheelTileEntity> IRONWHEEL = REGISTRATE
+            .tileEntity("ironflywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.IRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    // Dyed
+
+    public static final BlockEntityEntry<WheelTileEntity> BLACKIRONWHEEL = REGISTRATE
+            .tileEntity("black_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.BLACKIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> GRAYIRONWHEEL = REGISTRATE
+            .tileEntity("gray_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.GRAYIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> LIGHT_GRAYIRONWHEEL = REGISTRATE
+            .tileEntity("light_gray_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LIGHT_GRAYIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> WHITEIRONWHEEL = REGISTRATE
+            .tileEntity("white_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.WHITEIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> REDIRONWHEEL = REGISTRATE
+            .tileEntity("red_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.REDIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> ORANGEIRONWHEEL = REGISTRATE
+            .tileEntity("orange_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.ORANGEIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> YELLOWIRONWHEEL = REGISTRATE
+            .tileEntity("yellow_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.YELLOWIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> LIMEIRONWHEEL = REGISTRATE
+            .tileEntity("lime_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LIMEIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> GREENIRONWHEEL = REGISTRATE
+            .tileEntity("green_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.GREENIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> CYANIRONWHEEL = REGISTRATE
+            .tileEntity("cyan_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.CYANIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> LIGHT_BLUEIRONWHEEL = REGISTRATE
+            .tileEntity("light_blue_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LIGHT_BLUEIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> BLUEIRONWHEEL = REGISTRATE
+            .tileEntity("blue_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.BLUEIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> MAGENTAIRONWHEEL = REGISTRATE
+            .tileEntity("magenta_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.MAGENTAIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> PURPLEIRONWHEEL = REGISTRATE
+            .tileEntity("purple_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PURPLEIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+
+    public static final BlockEntityEntry<WheelTileEntity> PINKIRONWHEEL = REGISTRATE
+            .tileEntity("pink_iron_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PINKIRONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
 
 
     public static void register() {}

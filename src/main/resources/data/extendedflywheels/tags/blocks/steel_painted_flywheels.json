@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "extendedflywheels:black_steel_flywheel",
+    "extendedflywheels:gray_steel_flywheel",
+    "extendedflywheels:light_gray_steel_flywheel",
+    "extendedflywheels:white_steel_flywheel",
+    "extendedflywheels:red_steel_flywheel",
+    "extendedflywheels:orange_steel_flywheel",
+    "extendedflywheels:yellow_steel_flywheel",
+    "extendedflywheels:lime_steel_flywheel",
+    "extendedflywheels:green_steel_flywheel",
+    "extendedflywheels:cyan_steel_flywheel",
+    "extendedflywheels:light_blue_steel_flywheel",
+    "extendedflywheels:blue_steel_flywheel",
+    "extendedflywheels:magenta_steel_flywheel",
+    "extendedflywheels:purple_steel_flywheel",
+    "extendedflywheels:pink_steel_flywheel"
+  ]
+}

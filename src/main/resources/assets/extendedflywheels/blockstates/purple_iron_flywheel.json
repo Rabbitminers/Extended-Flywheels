@@ -1,0 +1,19 @@
+
+    {
+        "variants": {
+            "axis=x": {
+                "model": "extendedflywheels:block/purpleironflywheel/block",
+                "x": 90,
+                "y": 90
+            },
+            "axis=y": {
+                "model": "extendedflywheels:block/purpleironflywheel/block"
+            },
+            "axis=z": {
+                "model": "extendedflywheels:block/purpleironflywheel/block",
+                "x": 90,
+                "y": 180
+            }
+        }
+    }
+    

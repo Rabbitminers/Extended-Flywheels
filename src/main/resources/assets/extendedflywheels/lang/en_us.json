@@ -1,4 +1,6 @@
 {
+  "itemGroup.extendedflywheels": "Extended Flywheels",
+
   "block.extendedflywheels.flywheel": "Brass Flywheel",
   "block.extendedflywheels.black_brass_flywheel": "Black Brass Flywheel",
   "block.extendedflywheels.gray_brass_flywheel": "Gray Brass Flywheel",
@@ -15,6 +17,7 @@
   "block.extendedflywheels.magenta_brass_flywheel": "Magenta Brass Flywheel",
   "block.extendedflywheels.purple_brass_flywheel": "Purple Brass Flywheel",
   "block.extendedflywheels.pink_brass_flywheel": "Pink Brass Flywheel",
+  
   "block.extendedflywheels.black_steel_flywheel": "Black Steel Flywheel",
   "block.extendedflywheels.gray_steel_flywheel": "Gray Steel Flywheel",
   "block.extendedflywheels.light_gray_steel_flywheel": "Light Gray Steel Flywheel",
@@ -30,5 +33,22 @@
   "block.extendedflywheels.magenta_steel_flywheel": "Magenta Steel Flywheel",
   "block.extendedflywheels.purple_steel_flywheel": "Purple Steel Flywheel",
   "block.extendedflywheels.pink_steel_flywheel": "Pink Steel Flywheel",
-  "block.extendedflywheels.steelflywheel": "Steel Flywheel"
+  "block.extendedflywheels.steelflywheel": "Steel Flywheel",
+
+  "block.extendedflywheels.black_iron_flywheel": "Black Iron Flywheel",
+  "block.extendedflywheels.gray_iron_flywheel": "Gray Iron Flywheel",
+  "block.extendedflywheels.light_gray_iron_flywheel": "Light Gray Iron Flywheel",
+  "block.extendedflywheels.white_iron_flywheel": "White Iron Flywheel",
+  "block.extendedflywheels.red_iron_flywheel": "Red Iron Flywheel",
+  "block.extendedflywheels.orange_iron_flywheel": "Orange Iron Flywheel",
+  "block.extendedflywheels.yellow_iron_flywheel": "Yellow Iron Flywheel",
+  "block.extendedflywheels.lime_iron_flywheel": "Lime Iron Flywheel",
+  "block.extendedflywheels.green_iron_flywheel": "Green Iron Flywheel",
+  "block.extendedflywheels.cyan_iron_flywheel": "Cyan Iron Flywheel",
+  "block.extendedflywheels.light_blue_iron_flywheel": "Light Blue Iron Flywheel",
+  "block.extendedflywheels.blue_iron_flywheel": "Blue Iron Flywheel",
+  "block.extendedflywheels.magenta_iron_flywheel": "Magenta Iron Flywheel",
+  "block.extendedflywheels.purple_iron_flywheel": "Purple Iron Flywheel",
+  "block.extendedflywheels.pink_iron_flywheel": "Pink Iron Flywheel",
+  "block.extendedflywheels.ironflywheel": "Iron Flywheel"
 }

@@ -3,7 +3,7 @@ loaderVersion="[40,)"
 license="GNU"
 [[mods]] #mandatory
 modId="extendedflywheels"
-version="0.0.1-1.18.2"
+version="1.0.0-1.18.2"
 displayName="Extended Flywheels" #mandatory
 logoFile="examplemod.png" #optional
 credits=""
@@ -29,19 +29,19 @@ modId="minecraft"
 mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version
 versionRange="[1.18.2,1.19)"
-ordering="NONE"
+ordering="AFTER"
 side="BOTH"
 
-[[dependencies.create]]
+[[dependencies.extendedflywheels]]
 modId="flywheel"
 mandatory=true
 versionRange="[0.5, )"
 ordering="AFTER"
 side="CLIENT"
 
-[[dependencies.create]]
+[[dependencies.extendedflywheels]]
 modId="create"
 mandatory=true
-versionRange="[0.6.5,0.6.6)"
-ordering="AFTER"
+versionRange="[0.5.0c,)"
+ordering="BEFORE"
 side="BOTH"

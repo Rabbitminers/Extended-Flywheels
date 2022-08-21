@@ -4,7 +4,7 @@ import re
 import os
 
 colors = ["black", "gray", "light_gray", "white", "red", "orange", "yellow", "lime", "green", "cyan", "light_blue", "blue", "magenta", "purple", "pink"]
-materials = ["brass", "steel"]
+materials = ["iron"]
 filelist = []
 
 def generate_blockstates():
@@ -141,6 +141,11 @@ def generate_textures(pathlist):
         base.paste(overlay, (0,0), mask=overlay)
         base.save(f"output/{colour}_{type}.png", "PNG")
 
+def generate_tags():
+    for material in materials:
+        for color in colors:
+            print(f'"extendedflywheels:{color}_{material}_flywheel",')
+
 def main():
     if os.path.isdir('output'):
         os.rmdir("output")
@@ -152,4 +157,5 @@ def main():
     generate_blockstates()
 
 if __name__ == "__main__":
-    generate_item_loader()
+    generate_blockstates()
+
