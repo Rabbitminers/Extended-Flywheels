@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "extendedflywheels:flywheel"
+    }
+  ],
+  "result": {
+    "item": "create:flywheel"
+  }
+}

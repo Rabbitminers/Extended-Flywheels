@@ -16,6 +16,8 @@ public class EFTags {
                 forgeTag("flywheels/brass_painted_flywheels");
         public static final TagKey<Block> STEEL_PAINTED_FLYWHEELS =
                 forgeTag("flywheels/steel_painted_flywheels");
+        public static final TagKey<Block> IRON_PAINTED_FLYWHEELS =
+                forgeTag("flywheels/iron_painted_flywheels");
 
         public static final TagKey<Block> BRASS_FLYWHEELS =
                 tag("brass_painted_flywheels");

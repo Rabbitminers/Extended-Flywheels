@@ -45,7 +45,7 @@ public class EFBlocks {
     // Naming Convention: [COLOUR][MATERIAL]WHEEL
     // Brass Flywheels
 
-    // Default
+    // Default - This exists as a replacement to the 'vanilla flywheel' as it is able to rotate on a train
     public static final BlockEntry<WheelBlock> FLYWHEEL =
             REGISTRATE.block("flywheel", p -> WheelBlock.brass("none", p))
                     .initialProperties(SharedProperties::softMetal)
@@ -66,6 +66,7 @@ public class EFBlocks {
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
                     .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -77,7 +78,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -89,7 +90,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -101,7 +102,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -113,7 +114,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -125,7 +126,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -137,7 +138,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -149,7 +150,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -161,7 +162,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -173,7 +174,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -185,7 +186,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -197,7 +198,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -209,7 +210,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -221,7 +222,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -233,7 +234,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -247,7 +248,7 @@ public class EFBlocks {
                 .initialProperties(SharedProperties::softMetal)
                 .properties(BlockBehaviour.Properties::noOcclusion)
                 .blockstate(BlockStateGen.axisBlockProvider(true))
-                .transform(BlockStressDefaults.setNoImpact())
+                .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                 .item()
                 .transform(customItemModel())
                 .register();
@@ -261,7 +262,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -273,7 +274,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -285,7 +286,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -297,7 +298,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -309,7 +310,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -321,7 +322,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -333,7 +334,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -345,7 +346,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -357,7 +358,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -369,7 +370,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -381,7 +382,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -393,7 +394,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -405,7 +406,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -417,7 +418,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -429,7 +430,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -442,7 +443,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -456,7 +457,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -468,7 +469,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -480,7 +481,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -492,7 +493,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -504,7 +505,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -516,7 +517,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -528,7 +529,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -540,7 +541,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -552,7 +553,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -564,7 +565,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -576,7 +577,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -588,7 +589,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -600,7 +601,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -612,7 +613,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
@@ -624,7 +625,7 @@ public class EFBlocks {
                     .initialProperties(SharedProperties::softMetal)
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();

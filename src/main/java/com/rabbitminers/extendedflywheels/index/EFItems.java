@@ -8,7 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 public class EFItems {
 
     private static final CreateRegistrate REGISTRATE = ExtendedFlywheels.registrate()
-            .creativeModeTab(() -> CreativeModeTab.TAB_BREWING);
+            .creativeModeTab(() -> ExtendedFlywheels.itemGroup);
 
     public static void register(IEventBus eventBus) {
 

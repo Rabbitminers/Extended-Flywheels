@@ -4,8 +4,40 @@ import re
 import os
 
 colors = ["black", "gray", "light_gray", "white", "red", "orange", "yellow", "lime", "green", "cyan", "light_blue", "blue", "magenta", "purple", "pink"]
-materials = ["iron"]
+materials = ["iron", "brass", "steel"]
 filelist = []
+
+def generate_recipes():
+    flywheels = ["flywheel", "ironflywheel", "steelflywheel"]
+    os.makedirs('recipes', exist_ok=True)
+
+    contents = """
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "extendedflywheels:FLYWHEEL"
+    },
+    {
+      "item": "minecraft:COLOR_dye"
+    }
+  ],
+  "result": {
+    "item": "extendedflywheels:OUTPUT"
+  }
+}
+    """
+
+    for material in materials:
+        for color in colors:
+            with open(f"recipes/{color}_{material}_flywheel.json", "w") as f:
+                if material == "brass":
+                    output = re.sub("FLYWHEEL", "flywheel", contents)
+                else:
+                    output = re.sub("FLYWHEEL", f"{material}flywheel", contents)
+                output = re.sub("COLOR", color, output)
+                output = re.sub("OUTPUT", f"{color}_{material}_flywheel", output)
+                f.write(output)
 
 def generate_blockstates():
     os.makedirs('blockstates', exist_ok=True)
@@ -157,5 +189,5 @@ def main():
     generate_blockstates()
 
 if __name__ == "__main__":
-    generate_blockstates()
+    generate_recipes()
 

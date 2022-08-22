@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "create:crushed_copper_ore"
+    "item": "extendedflywheels:ironflywheel"
   },
   "result": "extendedflywheels:steelflywheel",
   "experience": 0.1,
