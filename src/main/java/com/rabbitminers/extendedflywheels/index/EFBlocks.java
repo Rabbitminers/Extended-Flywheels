@@ -2,6 +2,7 @@ package com.rabbitminers.extendedflywheels.index;
 
 import com.rabbitminers.extendedflywheels.ExtendedFlywheels;
 import com.rabbitminers.extendedflywheels.config.EFCommonValues;
+import com.rabbitminers.extendedflywheels.wheel.CarriageVisualRotationMovementBehaviour;
 import com.rabbitminers.extendedflywheels.wheel.WheelBlock;
 import com.simibubi.create.content.contraptions.components.flywheel.FlywheelBlock;
 import com.simibubi.create.foundation.block.BlockStressDefaults;
@@ -17,6 +18,7 @@ import net.minecraft.world.level.block.Block;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
 import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
 
 public class EFBlocks {
@@ -50,6 +52,7 @@ public class EFBlocks {
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
                     .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();

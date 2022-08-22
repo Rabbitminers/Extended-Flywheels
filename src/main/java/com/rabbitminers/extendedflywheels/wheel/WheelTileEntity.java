@@ -10,8 +10,10 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
 
-public class WheelTileEntity extends KineticTileEntity {
+public class WheelTileEntity extends KineticTileEntity implements IVisualRotationWheel {
 
+    boolean hasForcedSpeed = false;
+    float forcedSpeed = 0;
     LerpedFloat visualSpeed = LerpedFloat.linear();
     float angle;
 
@@ -22,6 +24,11 @@ public class WheelTileEntity extends KineticTileEntity {
     @Override
     protected AABB createRenderBoundingBox() {
         return super.createRenderBoundingBox().inflate(2);
+    }
+
+    @Override
+    public float getSpeed() {
+        return hasForcedSpeed ? forcedSpeed : super.getSpeed();
     }
 
     @Override
@@ -48,6 +55,32 @@ public class WheelTileEntity extends KineticTileEntity {
         visualSpeed.tickChaser();
         angle += visualSpeed.getValue() * 3 / 10f;
         angle %= 360;
+    }
+
+    public void setForcedSpeed(float speed) {
+        hasForcedSpeed = true;
+        forcedSpeed = speed;
+        visualSpeed.updateChaseTarget(speed);
+        visualSpeed.tickChaser();
+    }
+
+    public void unsetForcedSpeed() {
+        hasForcedSpeed = false;
+    }
+
+    @Override
+    public void setAngle(float angle) {
+        this.angle = angle;
+    }
+
+    @Override
+    public float getAngle() {
+        return angle;
+    }
+
+    @Override
+    public float getWheelRadius() {
+        return 22.5f / 16;
     }
 }
 
