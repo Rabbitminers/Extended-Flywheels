@@ -7,6 +7,39 @@ colors = ["black", "gray", "light_gray", "white", "red", "orange", "yellow", "li
 materials = ["iron", "brass", "steel"]
 filelist = []
 
+def generate_loot_tables():
+    os.makedirs('loot_tables', exist_ok=True)
+    contents = """
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "extendedflywheels:ITEMNAME"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}
+    """
+
+    for material in materials:
+        for color in colors:
+            with open(f"loot_tables/{color}_{material}_flywheel.json", "w") as f:
+                output = re.sub("ITEMNAME", f"{color}_{material}_flywheel", contents)
+                f.write(output)
+
+
+
 def generate_recipes():
     flywheels = ["flywheel", "ironflywheel", "steelflywheel"]
     os.makedirs('recipes', exist_ok=True)
@@ -189,5 +222,5 @@ def main():
     generate_blockstates()
 
 if __name__ == "__main__":
-    generate_recipes()
+    generate_loot_tables()
 

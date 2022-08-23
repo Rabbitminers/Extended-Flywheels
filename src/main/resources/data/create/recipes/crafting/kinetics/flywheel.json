@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "A",
+    "C"
+  ],
+  "key": {
+    "C": {
+      "tag": "forge:ingots/brass"
+    },
+    "A": {
+      "item": "create:shaft"
+    }
+  },
+  "result": {
+    "item": "create:flywheel"
+  }
+}

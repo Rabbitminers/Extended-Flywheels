@@ -1,7 +1,6 @@
 package com.rabbitminers.extendedflywheels.index;
 
 import com.rabbitminers.extendedflywheels.ExtendedFlywheels;
-import com.rabbitminers.extendedflywheels.config.EFCommonValues;
 import com.rabbitminers.extendedflywheels.wheel.CarriageVisualRotationMovementBehaviour;
 import com.rabbitminers.extendedflywheels.wheel.WheelBlock;
 import com.simibubi.create.content.contraptions.components.flywheel.FlywheelBlock;

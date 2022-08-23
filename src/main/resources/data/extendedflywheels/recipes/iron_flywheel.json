@@ -10,7 +10,7 @@
       "tag": "forge:ingots/iron"
     },
     "A": {
-      "item": "create:shaft"
+      "item": "create:andesite_alloy"
     }
   },
   "result": {
