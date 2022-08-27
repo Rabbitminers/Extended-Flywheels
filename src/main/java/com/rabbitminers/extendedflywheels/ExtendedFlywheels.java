@@ -6,7 +6,7 @@ import com.rabbitminers.extendedflywheels.index.EFItems;
 import com.rabbitminers.extendedflywheels.index.EFTileEntities;
 import com.rabbitminers.extendedflywheels.util.EFTags;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.tterrag.registrate.util.nullness.NonNullSupplier;
+import com.simibubi.create.repack.registrate.util.nullness.NonNullSupplier;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.CreativeModeTab;

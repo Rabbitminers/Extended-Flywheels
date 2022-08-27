@@ -3,7 +3,7 @@ loaderVersion="[40,)"
 license="GNU"
 [[mods]] #mandatory
 modId="extendedflywheels"
-version="1.2.0-1.18.2"
+version="1.2.1-1.18.2-0.5.c"
 displayName="Extended Flywheels" #mandatory
 logoFile="logo.png" #optional
 credits=""
@@ -42,6 +42,6 @@ side="CLIENT"
 [[dependencies.extendedflywheels]]
 modId="create"
 mandatory=true
-versionRange="[0.5.0.d,)"
+versionRange="[0.5.0c]"
 ordering="BEFORE"
 side="BOTH"
