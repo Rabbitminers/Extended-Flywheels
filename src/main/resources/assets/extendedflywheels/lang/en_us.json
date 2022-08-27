@@ -50,5 +50,32 @@
   "block.extendedflywheels.magenta_iron_flywheel": "Magenta Iron Flywheel",
   "block.extendedflywheels.purple_iron_flywheel": "Purple Iron Flywheel",
   "block.extendedflywheels.pink_iron_flywheel": "Pink Iron Flywheel",
-  "block.extendedflywheels.ironflywheel": "Iron Flywheel"
+  "block.extendedflywheels.ironflywheel": "Iron Flywheel",
+
+  "block.extendedflywheels.dark_oak_flywheel": "Dark Oak Flywheel",
+  "block.extendedflywheels.dark_oak_plated_flywheel": "Dark Oak Plated Flywheel",
+  "block.extendedflywheels.spruce_flywheel": "Spruce Flywheel",
+  "block.extendedflywheels.spruce_plated_flywheel": "Spruce Plated Flywheel",
+  "block.extendedflywheels.oak_flywheel": "Oak Flywheel",
+  "block.extendedflywheels.oak_plated_flywheel": "Oak Plated Flywheel",
+  "block.extendedflywheels.birch_flywheel": "Birch Flywheel",
+  "block.extendedflywheels.birch_plated_flywheel": "Birch Plated Flywheel",
+  "block.extendedflywheels.jungle_flywheel": "Jungle Flywheel",
+  "block.extendedflywheels.jungle_plated_flywheel": "Jungle Plated Flywheel",
+  "block.extendedflywheels.acacia_flywheel": "Acacia Flywheel",
+  "block.extendedflywheels.acacia_plated_flywheel": "Acacia Plated Flywheel",
+  "block.extendedflywheels.crimson_flywheel": "Crimson Flywheel",
+  "block.extendedflywheels.crimson_plated_flywheel": "Crimson Plated Flywheel",
+  "block.extendedflywheels.warped_flywheel": "Warped Flywheel",
+  "block.extendedflywheels.warped_plated_flywheel": "Warped Plated Flywheel",
+
+  "block.extendedflywheels.large_dark_oak_flywheel": "Large Dark Oak Flywheel",
+  "block.extendedflywheels.large_spruce_flywheel": "Large Spruce Flywheel",
+  "block.extendedflywheels.large_oak_flywheel": "Large Oak Flywheel",
+  "block.extendedflywheels.large_birch_flywheel": "Large Birch Flywheel",
+  "block.extendedflywheels.large_jungle_flywheel": "Large Jungle Flywheel",
+  "block.extendedflywheels.large_acacia_flywheel": "Large Acacia Flywheel",
+  "block.extendedflywheels.large_crimson_flywheel": "Large Crimson Flywheel",
+  "block.extendedflywheels.large_warped_flywheel": "Large Warped Flywheel"
+
 }

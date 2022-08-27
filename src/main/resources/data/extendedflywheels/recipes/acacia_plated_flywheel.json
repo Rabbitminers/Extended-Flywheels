@@ -1,0 +1,24 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:acacia_planks"
+    },
+    "B": {
+      "item": "create:iron_sheet"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "result": {
+    "item": "extendedflywheels:acacia_plated_flywheel"
+  }
+}
+            

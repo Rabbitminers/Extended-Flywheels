@@ -1,0 +1,8 @@
+
+{
+    "parent": "extendedflywheels:block/largespruceflywheel/flywheel",
+    "loader": "forge:obj",
+    "flip-v": true,
+    "model": "extendedflywheels:models/block/common/large_flywheel_3.obj"
+}
+    

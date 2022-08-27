@@ -1,0 +1,25 @@
+
+        {
+            "type": "create:mechanical_crafting",
+            "pattern": [
+                " PPP ",
+                "PPPPP",
+                "PPAPP",
+                "PPPPP",
+                " PPP "
+            ],
+            "key": {
+                "P": {
+                    "item": "minecraft:crimson_planks"
+                },
+                "A": {
+                "item": "create:andesite_alloy"
+                }
+            },
+            "result": {
+                "item": "extendedflywheels:large_crimson_flywheel",
+                "count": 2
+            },
+            "acceptMirrored": false
+        }
+        

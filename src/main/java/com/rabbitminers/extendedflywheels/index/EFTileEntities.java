@@ -451,6 +451,196 @@ public class EFTileEntities {
             .renderer(() -> WheelRenderer::new)
             .register();
 
+    // Wooden Flywheels
+
+    // Dark Oak
+
+    public static final BlockEntityEntry<WheelTileEntity> DARKOAKWHEEL = REGISTRATE
+            .tileEntity("dark_oak_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.DARKOAKWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDDARKOAKWHEEL = REGISTRATE
+            .tileEntity("dark_oak_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDDARKOAKWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+    
+    // Spruce
+
+    public static final BlockEntityEntry<WheelTileEntity> SPRUCEWHEEL = REGISTRATE
+            .tileEntity("spruce_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.SPRUCEWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDSPRUCEWHEEL = REGISTRATE
+            .tileEntity("spruce_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDSPRUCEWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    // Oak
+
+    public static final BlockEntityEntry<WheelTileEntity> OAKWHEEL = REGISTRATE
+            .tileEntity("oak_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.OAKWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDOAKWHEEL = REGISTRATE
+            .tileEntity("oak_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDOAKWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    // Birch
+
+    public static final BlockEntityEntry<WheelTileEntity> BIRCHWHEEL = REGISTRATE
+            .tileEntity("birch_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.BIRCHWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDBIRCHWHEEL = REGISTRATE
+            .tileEntity("birch_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDBIRCHWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    // Jungle
+
+    public static final BlockEntityEntry<WheelTileEntity> JUNGLEWHEEL = REGISTRATE
+            .tileEntity("jungle_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.JUNGLEWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDJUNGLEWHEEL = REGISTRATE
+            .tileEntity("jungle_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDJUNGLEWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    // Acacia
+
+    public static final BlockEntityEntry<WheelTileEntity> ACACIAWHEEL = REGISTRATE
+            .tileEntity("acacia_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.ACACIAWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDACACIAWHEEL = REGISTRATE
+            .tileEntity("acacia_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDACACIAWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    // Crimson
+
+    public static final BlockEntityEntry<WheelTileEntity> CRIMSONWHEEL = REGISTRATE
+            .tileEntity("crimson_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.CRIMSONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDCRIMSONWHEEL = REGISTRATE
+            .tileEntity("crimson_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDCRIMSONWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    // Warped
+
+    public static final BlockEntityEntry<WheelTileEntity> WARPEDWHEEL = REGISTRATE
+            .tileEntity("warped_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.WARPEDWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> PLATEDWARPEDWHEEL = REGISTRATE
+            .tileEntity("warped_plated_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.PLATEDWARPEDWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGEDARKOAKFLYWHEEL = REGISTRATE
+            .tileEntity("large_dark_oak_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGEDARKOAKFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGESPRUCEFLYWHEEL = REGISTRATE
+            .tileEntity("large_spruce_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGESPRUCEFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGEOAKFLYWHEEL = REGISTRATE
+            .tileEntity("large_oak_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGEOAKFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGEBIRCHFLYWHEEL = REGISTRATE
+            .tileEntity("large_birch_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGEBIRCHFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGEJUNGLEFLYWHEEL = REGISTRATE
+            .tileEntity("large_jungle_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGEJUNGLEFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGEACACIAFLYWHEEL = REGISTRATE
+            .tileEntity("large_acacia_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGEACACIAFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGECRIMSONFLYWHEEL = REGISTRATE
+            .tileEntity("large_crimson_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGECRIMSONFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
+    public static final BlockEntityEntry<WheelTileEntity> LARGEWARPEDFLYWHEEL = REGISTRATE
+            .tileEntity("large_warped_flywheel", WheelTileEntity::new)
+            .instance(() -> WheelInstance::new, false)
+            .validBlocks(EFBlocks.LARGEWARPEDFLYWHEEL)
+            .renderer(() -> WheelRenderer::new)
+            .register();
+
 
 
     public static void register() {}

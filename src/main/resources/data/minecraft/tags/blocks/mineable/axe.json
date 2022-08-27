@@ -1,0 +1,36 @@
+{
+  "replace": false,
+  "values": [
+    "extendedflywheels:oak_flywheel",
+    "extendedflywheels:oak_plated_flywheel",
+    "extendedflywheels:large_oak_flywheel",
+
+    "extendedflywheels:dark_oak_flywheel",
+    "extendedflywheels:dark_oak_plated_flywheel",
+    "extendedflywheels:large_dark_oak_flywheel",
+
+    "extendedflywheels:spruce_flywheel",
+    "extendedflywheels:spruce_plated_flywheel",
+    "extendedflywheels:large_spruce_flywheel",
+
+    "extendedflywheels:birch_flywheel",
+    "extendedflywheels:birch_plated_flywheel",
+    "extendedflywheels:large_birch_flywheel",
+
+    "extendedflywheels:jungle_flywheel",
+    "extendedflywheels:jungle_plated_flywheel",
+    "extendedflywheels:large_jungle_flywheel",
+
+    "extendedflywheels:acacia_flywheel",
+    "extendedflywheels:acacia_plated_flywheel",
+    "extendedflywheels:large_acacia_flywheel",
+
+    "extendedflywheels:crimson_flywheel",
+    "extendedflywheels:crimson_plated_flywheel",
+    "extendedflywheels:large_crimson_flywheel",
+
+    "extendedflywheels:warped_flywheel",
+    "extendedflywheels:warped_plated_flywheel",
+    "extendedflywheels:large_warped_flywheel"
+  ]
+}

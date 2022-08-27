@@ -1,0 +1,19 @@
+
+    {
+        "variants": {
+            "axis=x": {
+                "model": "extendedflywheels:block/largejungleflywheel/block",
+                "x": 90,
+                "y": 90
+            },
+            "axis=y": {
+                "model": "extendedflywheels:block/largejungleflywheel/block"
+            },
+            "axis=z": {
+                "model": "extendedflywheels:block/largejungleflywheel/block",
+                "x": 90,
+                "y": 180
+            }
+        }
+    }
+    

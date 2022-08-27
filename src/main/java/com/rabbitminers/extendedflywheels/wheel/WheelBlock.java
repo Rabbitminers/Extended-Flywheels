@@ -16,6 +16,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.Objects;
+import java.util.Properties;
 
 public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTileEntity> {
 
@@ -36,6 +37,15 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
     public static WheelBlock iron(String colour, Properties properties) {
         return new WheelBlock("iron", colour, properties);
     }
+
+    public static WheelBlock wood(String variation, Properties properties) {
+        return new WheelBlock("wood", variation, properties);
+    }
+
+    public static WheelBlock large(String wood_type, Properties properties) {
+        return new WheelBlock("large", wood_type, properties);
+    }
+
 
     public String matchColour(String colour) {
         return "TODO";
@@ -60,6 +70,65 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
     public BlockEntityType<? extends WheelTileEntity> getTileEntityType() {
 
         switch (type) {
+            case "wood":
+                switch (colour) {
+                    case "dark_oak":
+                        return EFTileEntities.DARKOAKWHEEL.get();
+                    case "plated_dark_oak":
+                        return EFTileEntities.PLATEDDARKOAKWHEEL.get();
+                    case "spruce":
+                        return EFTileEntities.SPRUCEWHEEL.get();
+                    case "plated_spruce":
+                        return EFTileEntities.PLATEDSPRUCEWHEEL.get();
+                    case "oak":
+                        return EFTileEntities.OAKWHEEL.get();
+                    case "plated_oak":
+                        return EFTileEntities.PLATEDOAKWHEEL.get();
+                    case "birch":
+                        return EFTileEntities.BIRCHWHEEL.get();
+                    case "plated_birch":
+                        return EFTileEntities.PLATEDBIRCHWHEEL.get();
+                    case "jungle":
+                        return EFTileEntities.JUNGLEWHEEL.get();
+                    case "plated_jungle":
+                        return EFTileEntities.PLATEDJUNGLEWHEEL.get();
+                    case "acacia":
+                        return EFTileEntities.ACACIAWHEEL.get();
+                    case "plated_acacia":
+                        return EFTileEntities.PLATEDACACIAWHEEL.get();
+                    case "warped":
+                        return EFTileEntities.WARPEDWHEEL.get();
+                    case "plated_warped":
+                        return EFTileEntities.PLATEDWARPEDWHEEL.get();
+                    case "crimson":
+                        return EFTileEntities.CRIMSONWHEEL.get();
+                    case "plated_crimson":
+                        return EFTileEntities.PLATEDCRIMSONWHEEL.get();
+                }
+
+            case "large":
+                switch (colour) {
+                    case "acacia":
+                        return EFTileEntities.LARGEACACIAFLYWHEEL.get();
+                    case "dark_oak":
+                        return EFTileEntities.LARGEDARKOAKFLYWHEEL.get();
+                    case "spruce":
+                        return EFTileEntities.LARGESPRUCEFLYWHEEL.get();
+                    case "oak":
+                        return EFTileEntities.LARGEOAKFLYWHEEL.get();
+                    case "birch":
+                        return EFTileEntities.LARGEBIRCHFLYWHEEL.get();
+                    case "jungle":
+                        return EFTileEntities.LARGEJUNGLEFLYWHEEL.get();
+                    case "crimson":
+                        return EFTileEntities.LARGECRIMSONFLYWHEEL.get();
+                    case "warped":
+                        return EFTileEntities.LARGEWARPEDFLYWHEEL.get();
+
+                    default:
+                        return EFTileEntities.LARGEOAKFLYWHEEL.get();
+                }
+
             case "brass":
                 switch(colour) {
                     case "black":

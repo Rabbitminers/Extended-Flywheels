@@ -1,0 +1,24 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CBC",
+    "BAB",
+    "CBC"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:warped_planks"
+    },
+    "B": {
+      "item": "create:iron_sheet"
+    },
+    "A": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "result": {
+    "item": "extendedflywheels:warped_plated_flywheel"
+  }
+}
+            

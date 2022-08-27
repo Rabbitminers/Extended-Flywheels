@@ -1,0 +1,23 @@
+{
+    "type": "create:mechanical_crafting",
+    "pattern": [
+        " PPP ",
+        "PPPPP",
+        "PPAPP",
+        "PPPPP",
+        " PPP "
+    ],
+    "key": {
+        "P": {
+            "item": "minecraft:birch_planks"
+        },
+        "A": {
+            "item": "create:andesite_alloy"
+        }
+    },
+    "result": {
+        "item": "extendedflywheels:large_birch_flywheel",
+        "count": 2
+    },
+    "acceptMirrored": false
+}

@@ -36,9 +36,7 @@ public class EFBlocks {
     }
 
     // Derive registrate from create
-    private static final CreateRegistrate REGISTRATE = ExtendedFlywheels
-            .registrate()
-            .creativeModeTab(
+    private static final CreateRegistrate REGISTRATE = ExtendedFlywheels.registrate().creativeModeTab(
                     () -> ExtendedFlywheels.itemGroup
             );
 
@@ -626,6 +624,258 @@ public class EFBlocks {
                     .properties(BlockBehaviour.Properties::noOcclusion)
                     .blockstate(BlockStateGen.axisBlockProvider(true))
                     .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    // Wooden flywheels
+
+    public static final BlockEntry<WheelBlock> DARKOAKWHEEL =
+            REGISTRATE.block("dark_oak_flywheel", p -> WheelBlock.wood("dark_oak", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDDARKOAKWHEEL =
+            REGISTRATE.block("dark_oak_plated_flywheel", p -> WheelBlock.wood("plated_dark_oak", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+    public static final BlockEntry<WheelBlock> SPRUCEWHEEL =
+            REGISTRATE.block("spruce_flywheel", p -> WheelBlock.wood("spruce", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDSPRUCEWHEEL =
+            REGISTRATE.block("spruce_plated_flywheel", p -> WheelBlock.wood("plated_spruce", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> OAKWHEEL =
+            REGISTRATE.block("oak_flywheel", p -> WheelBlock.wood("oak", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDOAKWHEEL =
+            REGISTRATE.block("oak_plated_flywheel", p -> WheelBlock.wood("plated_oak", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+
+    public static final BlockEntry<WheelBlock> BIRCHWHEEL =
+            REGISTRATE.block("birch_flywheel", p -> WheelBlock.wood("birch", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDBIRCHWHEEL =
+            REGISTRATE.block("birch_plated_flywheel", p -> WheelBlock.wood("plated_birch", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> JUNGLEWHEEL =
+            REGISTRATE.block("jungle_flywheel", p -> WheelBlock.wood("jungle", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDJUNGLEWHEEL =
+            REGISTRATE.block("jungle_plated_flywheel", p -> WheelBlock.wood("plated_jungle", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> ACACIAWHEEL =
+            REGISTRATE.block("acacia_flywheel", p -> WheelBlock.wood("acacia", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDACACIAWHEEL =
+            REGISTRATE.block("acacia_plated_flywheel", p -> WheelBlock.wood("plated_acacia", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> CRIMSONWHEEL =
+            REGISTRATE.block("crimson_flywheel", p -> WheelBlock.wood("crimson", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDCRIMSONWHEEL =
+            REGISTRATE.block("crimson_plated_flywheel", p -> WheelBlock.wood("plated_crimson", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> WARPEDWHEEL =
+            REGISTRATE.block("warped_flywheel", p -> WheelBlock.wood("warped", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> PLATEDWARPEDWHEEL =
+            REGISTRATE.block("warped_plated_flywheel", p -> WheelBlock.wood("plated_warped", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact()).onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> LARGEDARKOAKFLYWHEEL =
+            REGISTRATE.block("large_dark_oak_flywheel", p -> WheelBlock.large("dark_oak", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+    
+    public static final BlockEntry<WheelBlock> LARGESPRUCEFLYWHEEL =
+            REGISTRATE.block("large_spruce_flywheel", p -> WheelBlock.large("spruce", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> LARGEOAKFLYWHEEL =
+            REGISTRATE.block("large_oak_flywheel", p -> WheelBlock.large("oak", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> LARGEBIRCHFLYWHEEL =
+            REGISTRATE.block("large_birch_flywheel", p -> WheelBlock.large("birch", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> LARGEJUNGLEFLYWHEEL =
+            REGISTRATE.block("large_jungle_flywheel", p -> WheelBlock.large("jungle", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> LARGEACACIAFLYWHEEL =
+            REGISTRATE.block("large_acacia_flywheel", p -> WheelBlock.large("acacia", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> LARGEWARPEDFLYWHEEL =
+            REGISTRATE.block("large_warped_flywheel", p -> WheelBlock.large("warped", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                    .item()
+                    .transform(customItemModel())
+                    .register();
+
+    public static final BlockEntry<WheelBlock> LARGECRIMSONFLYWHEEL =
+            REGISTRATE.block("large_crimson_flywheel", p -> WheelBlock.large("crimson", p))
+                    .initialProperties(SharedProperties::wooden)
+                    .properties(BlockBehaviour.Properties::noOcclusion)
+                    .blockstate(BlockStateGen.axisBlockProvider(true))
+                    .transform(BlockStressDefaults.setNoImpact())
+                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
                     .item()
                     .transform(customItemModel())
                     .register();
