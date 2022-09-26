@@ -138,6 +138,14 @@ def generate_block_json():
                 output = re.sub("DIR", f"{color}{material}flywheel", contents)
                 f.write(output)
 
+def generate_block_registry():
+    id = ""
+    name = ""
+    colour = ""
+    material = ""
+    contents = f'public static final BlockEntry<WheelBlock> {name} = FlywheelRegistrateFactory("{id}", "{colour}", "{material}");'
+    print(contents)
+
 def generate_flywheel_json():
     contents = """
 {

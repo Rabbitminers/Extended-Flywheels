@@ -5,8 +5,16 @@ import com.simibubi.create.AllShapes;
 import com.simibubi.create.AllTileEntities;
 import com.simibubi.create.content.contraptions.base.RotatedPillarKineticBlock;
 import com.simibubi.create.foundation.block.ITE;
+import com.simibubi.create.foundation.utility.Components;
+import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.RenderShape;
@@ -14,7 +22,9 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.List;
 import java.util.Objects;
 import java.util.Properties;
 
@@ -44,11 +54,6 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
 
     public static WheelBlock large(String wood_type, Properties properties) {
         return new WheelBlock("large", wood_type, properties);
-    }
-
-
-    public String matchColour(String colour) {
-        return "TODO";
     }
 
     @Override
@@ -259,5 +264,15 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
         return 1.75f;
     }
 
+    @Override
+    public void appendHoverText(ItemStack itemStack, @Nullable BlockGetter blockGetter, List<Component> components, TooltipFlag tooltipFlag) {
+        if (Screen.hasShiftDown()) {
+            components.add(new TextComponent("When part of a train:\n").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.BOLD));
+            components.add(new TextComponent("To have the flywheel rotate against train tracks (like bogeys), assemble the train facing South or West.\nAssemble the train facing North or East to have the flywheel rotate with the tracks").withStyle(ChatFormatting.DARK_GRAY));
+        } else {
+            components.add(new TextComponent("Press SHIFT for more info").withStyle(ChatFormatting.GRAY));
+        }
+        super.appendHoverText(itemStack, blockGetter, components, tooltipFlag);
+    }
 }
 

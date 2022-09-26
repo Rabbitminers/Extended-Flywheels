@@ -21,7 +21,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '1.2.1-1.18.2-0.5.c'
+version = '1.2.2-1.18.2-0.5.e'
 group = 'com.rabbitminers.extendedflywheels' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'extendedflywheels'
 
@@ -123,13 +123,10 @@ dependencies {
 
     minecraft 'net.minecraftforge:forge:1.18.2-40.1.68'
 
-    compileOnly fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
-
-
-    // TEMPORARILY COMMENTED
     // Create and flywheel
-    implementation fg.deobf("com.simibubi.create:Create:mc${create_version}") // Create
-    implementation fg.deobf("com.jozufozu.flywheel:Flywheel-Forge:${flywheel_version}") // Flywheel
+    implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
 
     // JEI
     compileOnly fg.deobf("mezz.jei:jei-${jei_minecraft_version}:${jei_version}:api")

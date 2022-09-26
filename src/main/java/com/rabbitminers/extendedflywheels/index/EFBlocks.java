@@ -8,8 +8,8 @@ import com.simibubi.create.foundation.block.BlockStressDefaults;
 import com.simibubi.create.foundation.data.BlockStateGen;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
-import com.simibubi.create.repack.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.builders.BlockBuilder;
+import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullFunction;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.CreativeModeTab;
@@ -17,13 +17,41 @@ import net.minecraft.world.level.block.Block;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+import java.util.Objects;
+
 import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
 import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
 
 public class EFBlocks {
 
 
-    // Utilities
+    // Factory
+    public static BlockEntry<WheelBlock> FlywheelRegistrateFactory(
+            String id, // Block id
+            String colour, //
+            String material
+    ) {
+        return REGISTRATE.block(id, p -> FlywheelTypeParser(material, colour, p))
+                .initialProperties(Objects.equals(material, "wood") ?  SharedProperties::wooden : SharedProperties::softMetal)
+                .properties(BlockBehaviour.Properties::noOcclusion) // Fix shadow issues
+                .blockstate(BlockStateGen.axisBlockProvider(true)) // Directions
+                .transform(BlockStressDefaults.setNoImpact())
+                .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
+                .item()
+                .transform(customItemModel())
+                .register();
+    }
+
+    public static WheelBlock FlywheelTypeParser(String material, String colour, BlockBehaviour.Properties p) {
+        switch (material) {
+            case "brass": return WheelBlock.brass(colour, p);
+            case "steel": return WheelBlock.steel(colour, p);
+            case "iron": return WheelBlock.iron(colour, p);
+            case "wood": return WheelBlock.wood(colour, p);
+            default: return WheelBlock.large(colour, p); // Fallback or if none are found
+        }
+    }
+
 
     // Custom tool requirements
     public static <T extends Block, P> NonNullFunction<BlockBuilder<T, P>, BlockBuilder<T, P>> axeOrPickAxe() {
@@ -43,16 +71,11 @@ public class EFBlocks {
     // Brass Flywheels
 
     // Default - This exists as a replacement to the 'vanilla flywheel' as it is able to rotate on a train
+
     public static final BlockEntry<WheelBlock> FLYWHEEL =
-            REGISTRATE.block("flywheel", p -> WheelBlock.brass("none", p))
-                    .initialProperties(SharedProperties::softMetal)
-                    .properties(BlockBehaviour.Properties::noOcclusion)
-                    .blockstate(BlockStateGen.axisBlockProvider(true))
-                    .transform(BlockStressDefaults.setNoImpact())
-                    .onRegister(movementBehaviour(new CarriageVisualRotationMovementBehaviour()))
-                    .item()
-                    .transform(customItemModel())
-                    .register();
+            FlywheelRegistrateFactory("flywheel", "none", "brass");
+    public static final BlockEntry<WheelBlock> OAKWHEEL =
+            FlywheelRegistrateFactory("oak_flywheel", "oak", "wood");
 
     // Dyed
 
@@ -670,6 +693,7 @@ public class EFBlocks {
                     .transform(customItemModel())
                     .register();
 
+    /*
     public static final BlockEntry<WheelBlock> OAKWHEEL =
             REGISTRATE.block("oak_flywheel", p -> WheelBlock.wood("oak", p))
                     .initialProperties(SharedProperties::wooden)
@@ -679,6 +703,8 @@ public class EFBlocks {
                     .item()
                     .transform(customItemModel())
                     .register();
+
+     */
 
     public static final BlockEntry<WheelBlock> PLATEDOAKWHEEL =
             REGISTRATE.block("oak_plated_flywheel", p -> WheelBlock.wood("plated_oak", p))

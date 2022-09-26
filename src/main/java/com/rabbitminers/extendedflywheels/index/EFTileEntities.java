@@ -11,7 +11,8 @@ import com.simibubi.create.content.contraptions.components.flywheel.FlywheelTile
 import com.simibubi.create.foundation.block.ITE;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
-import com.simibubi.create.repack.registrate.util.entry.BlockEntityEntry;
+import com.tterrag.registrate.util.entry.BlockEntityEntry;
+
 public class EFTileEntities {
     private static final CreateRegistrate REGISTRATE = ExtendedFlywheels.registrate();
 

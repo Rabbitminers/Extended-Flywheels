@@ -3,10 +3,11 @@ loaderVersion="[40,)"
 license="GNU"
 [[mods]] #mandatory
 modId="extendedflywheels"
-version="1.2.1-1.18.2-0.5.c"
+version="1.2.2-1.18.2-0.5.e"
 displayName="Extended Flywheels" #mandatory
 logoFile="logo.png" #optional
 credits=""
+
 authors="Rabbitminers" #optional
 description='''
 A small mod to help decorate with create mod through some extra variety of flywheels
@@ -42,6 +43,6 @@ side="CLIENT"
 [[dependencies.extendedflywheels]]
 modId="create"
 mandatory=true
-versionRange="[0.5.0c]"
+versionRange="[0.5.0.e,)"
 ordering="BEFORE"
 side="BOTH"
