@@ -6,7 +6,7 @@
         "0": "extendedflywheels:block/black_iron_flywheel",
         "1": "extendedflywheels:block/axis",
         "2": "extendedflywheels:block/axis_top",
-        "particle": "extendedflywheels:block/flywheel"
+        "particle": "create:block/axis"
     }
 }
     

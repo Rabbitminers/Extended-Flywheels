@@ -5,6 +5,6 @@
         "0": "extendedflywheels:block/flywheel",
         "1": "extendedflywheels:block/axis",
         "2": "extendedflywheels:block/axis_top",
-        "particle": "extendedflywheels:block/flywheel"
+        "particle": "create:block/axis"
     }
 }

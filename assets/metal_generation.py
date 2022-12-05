@@ -155,7 +155,7 @@ def generate_flywheel_json():
         "0": "extendedflywheels:block/IMG",
         "1": "extendedflywheels:block/axis",
         "2": "extendedflywheels:block/axis_top",
-        "particle": "extendedflywheels:block/flywheel"
+        "particle": "create:block/axis"
     }
 }
     """
