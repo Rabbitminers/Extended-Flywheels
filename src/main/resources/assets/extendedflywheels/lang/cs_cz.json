@@ -1,0 +1,156 @@
+{
+
+  "itemGroup.extendedflywheels": "Rozšířené Setrvačníky",
+  "block.extendedflywheels.flywheel": "Mosazný Setrvačník",
+
+  "block.extendedflywheels.black_brass_flywheel": "Černý Mosazný Setrvačník",
+
+  "block.extendedflywheels.gray_brass_flywheel": "Šedý Mosazný Setrvačník",
+
+  "block.extendedflywheels.light_gray_brass_flywheel": "Světle Šedý Mosazný Setrvačník ",
+
+  "block.extendedflywheels.white_brass_flywheel": "Bílý Mosazný Setrvačník",
+
+  "block.extendedflywheels.red_brass_flywheel": "Červený Mosazný Setrvačník",
+
+  "block.extendedflywheels.orange_brass_flywheel": "Oranžový Mosazný Setrvačník",
+
+  "block.extendedflywheels.yellow_brass_flywheel": "Žlutý Mosazný Setrvačník",
+
+  "block.extendedflywheels.lime_brass_flywheel": "Limetkový Mosazný Setrvačník",
+
+  "block.extendedflywheels.green_brass_flywheel": "Zelený Mosazný Setrvačník",
+
+  "block.extendedflywheels.cyan_brass_flywheel": "Tyrkysový Mosazný Setrvačník",
+
+  "block.extendedflywheels.light_blue_brass_flywheel": "Světle Modrý Mosazný Setrvačník",
+
+  "block.extendedflywheels.blue_brass_flywheel": "Modrý Mosázny Setrvačník",
+
+  "block.extendedflywheels.magenta_brass_flywheel": "Purpurový Mosazný Setrvačník",
+
+  "block.extendedflywheels.purple_brass_flywheel": "Fialový Mosazný Setrvačník",
+
+  "block.extendedflywheels.pink_brass_flywheel": "Ružový Mosazný Setrvačník",
+
+
+
+  "block.extendedflywheels.black_steel_flywheel": "Černý Ocelový Setrvačník",
+
+  "block.extendedflywheels.gray_steel_flywheel": "Šedý Ocelový Setrvačník",
+
+  "block.extendedflywheels.light_gray_steel_flywheel": "Světle Šedý Ocelový Setrvačník",
+
+  "block.extendedflywheels.white_steel_flywheel": "Bílý Ocelový Setrvačník",
+
+  "block.extendedflywheels.red_steel_flywheel": "Červený Ocelový Setrvačník",
+
+  "block.extendedflywheels.orange_steel_flywheel": "Oranžový Ocelový Setrvačník",
+
+  "block.extendedflywheels.yellow_steel_flywheel": "Žlutý Ocelový Setrvačník",
+
+  "block.extendedflywheels.lime_steel_flywheel": "Limetkový Ocelový Setrvačník",
+
+  "block.extendedflywheels.green_steel_flywheel": "Zelený Ocelový Setrvačník",
+
+  "block.extendedflywheels.cyan_steel_flywheel": "Tyrkysový Ocelový Setrvačník",
+
+  "block.extendedflywheels.light_blue_steel_flywheel": "Světle Modrý Ocelový Setrvačník",
+
+  "block.extendedflywheels.blue_steel_flywheel": "Modrý Ocelový Setrvačník",
+
+  "block.extendedflywheels.magenta_steel_flywheel": "Purpurový Ocelový Setrvačník",
+
+  "block.extendedflywheels.purple_steel_flywheel": "Fialový Ocelový Setrvačník",
+
+  "block.extendedflywheels.pink_steel_flywheel": "Ružový Ocelový Setrvačník",
+
+  "block.extendedflywheels.steelflywheel": "Ocelový Setrvačník",
+
+
+
+  "block.extendedflywheels.black_iron_flywheel": "Černý Železný Setrvačník",
+
+  "block.extendedflywheels.gray_iron_flywheel": "Šedý Železný Setrvačník",
+
+  "block.extendedflywheels.light_gray_iron_flywheel": "Světle Šedý Železný Setrvačník",
+
+  "block.extendedflywheels.white_iron_flywheel": "Bílý Železný Setrvačník",
+
+  "block.extendedflywheels.red_iron_flywheel": "Červený Železný Setrvačník",
+
+  "block.extendedflywheels.orange_iron_flywheel": "Oranžový Železný Setrvačník",
+
+  "block.extendedflywheels.yellow_iron_flywheel": "Žlutý Železný Setrvačník",
+
+  "block.extendedflywheels.lime_iron_flywheel": "Limetkový Železný Setrvačník",
+
+  "block.extendedflywheels.green_iron_flywheel": "Zelený Železný Setrvačník",
+
+  "block.extendedflywheels.cyan_iron_flywheel": "Tyrkysový Železný Setrvačník",
+
+  "block.extendedflywheels.light_blue_iron_flywheel": "Světle Modrý Železný Setrvačník",
+
+  "block.extendedflywheels.blue_iron_flywheel": "Modrý Železný Setrvačník",
+
+  "block.extendedflywheels.magenta_iron_flywheel": "Purpurový Železný Setrvačník",
+
+  "block.extendedflywheels.purple_iron_flywheel": "Fialový Železný Setrvačník",
+
+  "block.extendedflywheels.pink_iron_flywheel": "Ružový Železný Setrvačník",
+
+  "block.extendedflywheels.ironflywheel": " Železný Setrvačník",
+
+
+
+  "block.extendedflywheels.dark_oak_flywheel": "Tmavě Dubový Setrvačník",
+
+  "block.extendedflywheels.dark_oak_plated_flywheel": "Tmavě Dubový Plátovaný Setrvačník",
+
+  "block.extendedflywheels.spruce_flywheel": "Smrkový Setrvačník",
+
+  "block.extendedflywheels.spruce_plated_flywheel": "Smrkový Plátovaný Setrvačník",
+
+  "block.extendedflywheels.oak_flywheel": "Dubový Setrvačník",
+
+  "block.extendedflywheels.oak_plated_flywheel": "Dubový Plátovaný  Setrvačník",
+
+  "block.extendedflywheels.birch_flywheel": "Březový Setrvačník",
+
+  "block.extendedflywheels.birch_plated_flywheel": "Březový Plátovaný Setrvačník",
+
+  "block.extendedflywheels.jungle_flywheel": "Tropický Setrvačník",
+
+  "block.extendedflywheels.jungle_plated_flywheel": " Tropický Plátovaný Setrvačník",
+
+  "block.extendedflywheels.acacia_flywheel": "Akáciový Plátovaný Setrvačník",
+
+  "block.extendedflywheels.acacia_plated_flywheel": "Akáciový Plátovaný Setrvačník",
+
+  "block.extendedflywheels.crimson_flywheel": "Karmínový Setrvačník",
+
+  "block.extendedflywheels.crimson_plated_flywheel": "Karmínový Plátovaný Setrvačník",
+
+  "block.extendedflywheels.warped_flywheel": "Přízračný Setrvačník",
+
+  "block.extendedflywheels.warped_plated_flywheel": "Přízračný Plátovaný Setrvačník",
+
+
+
+  "block.extendedflywheels.large_dark_oak_flywheel": "Velký Tmavo Dubový Setrvačník",
+
+  "block.extendedflywheels.large_spruce_flywheel": "Velký Smrekový Setrvačník",
+
+  "block.extendedflywheels.large_oak_flywheel": "Velký Dubový Setrvačník",
+
+  "block.extendedflywheels.large_birch_flywheel": "Velký Březový Setrvačník",
+
+  "block.extendedflywheels.large_jungle_flywheel": "Velký Tropický Setrvačník ",
+
+  "block.extendedflywheels.large_acacia_flywheel": " Velký Akáciový Setrvačník ",
+
+  "block.extendedflywheels.large_crimson_flywheel": "Velký Karmínový Setrvačník",
+
+  "block.extendedflywheels.large_warped_flywheel": "Velký Přízračný Setrvačník"
+
+}

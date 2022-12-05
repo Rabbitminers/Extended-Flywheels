@@ -1,0 +1,160 @@
+{
+
+  "itemGroup.extendedflywheels": "Rozšírené Zotrvačníky",
+
+
+
+  "block.extendedflywheels.flywheel": "Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.black_brass_flywheel": "Čierny Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.gray_brass_flywheel": "Sivý Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.light_gray_brass_flywheel": "Svetlo Sivý Zotrvačník ",
+
+  "block.extendedflywheels.white_brass_flywheel": "Biely Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.red_brass_flywheel": "Červený Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.orange_brass_flywheel": "Oranžový Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.yellow_brass_flywheel": "Žltý Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.lime_brass_flywheel": "Limetkový Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.green_brass_flywheel": "Zelený Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.cyan_brass_flywheel": "Tyrkysový Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.light_blue_brass_flywheel": "Svetlo Modrý Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.blue_brass_flywheel": "Modrý Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.magenta_brass_flywheel": "Purpurový Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.purple_brass_flywheel": "Fialový Mosadzný Zotrvačník",
+
+  "block.extendedflywheels.pink_brass_flywheel": "Ružový Mosadzný Zotrvačník",
+
+
+
+  "block.extendedflywheels.black_steel_flywheel": "Čierny Oceľový Zotrvačník",
+
+  "block.extendedflywheels.gray_steel_flywheel": "Sivý Oceľový Zotrvačník",
+
+  "block.extendedflywheels.light_gray_steel_flywheel": "Svetlo Sivý Oceľový Zotrvačník",
+
+  "block.extendedflywheels.white_steel_flywheel": "Biely Oceľový Zotrvačník",
+
+  "block.extendedflywheels.red_steel_flywheel": "Červený Oceľový Zotrvačník",
+
+  "block.extendedflywheels.orange_steel_flywheel": "Oranžový Oceľový Zotrvačník",
+
+  "block.extendedflywheels.yellow_steel_flywheel": "Žltý Oceľový Zotrvačník",
+
+  "block.extendedflywheels.lime_steel_flywheel": "Limetkový Oceľový Zotrvačník",
+
+  "block.extendedflywheels.green_steel_flywheel": "Zelený Oceľový Zotrvačník",
+
+  "block.extendedflywheels.cyan_steel_flywheel": "Tyrkysový Oceľový Zotrvačník",
+
+  "block.extendedflywheels.light_blue_steel_flywheel": "Svetlo Modrý Oceľový Zotrvačník",
+
+  "block.extendedflywheels.blue_steel_flywheel": "Modrý Oceľový Zotrvačník",
+
+  "block.extendedflywheels.magenta_steel_flywheel": "Purpurový Oceľový Zotrvačník",
+
+  "block.extendedflywheels.purple_steel_flywheel": "Fialový Oceľový Zotrvačník",
+
+  "block.extendedflywheels.pink_steel_flywheel": "Ružový Oceľový Zotrvačník",
+
+  "block.extendedflywheels.steelflywheel": "Oceľový Zotrvačník",
+
+
+
+  "block.extendedflywheels.black_iron_flywheel": "Čierny Železný Zotrvačník",
+
+  "block.extendedflywheels.gray_iron_flywheel": "Sivý Železný Zotrvačník",
+
+  "block.extendedflywheels.light_gray_iron_flywheel": "Svetlo Sivý Železný Zotrvačník",
+
+  "block.extendedflywheels.white_iron_flywheel": "Biely Železný Zotrvačník",
+
+  "block.extendedflywheels.red_iron_flywheel": "Červený Železný Zotrvačník",
+
+  "block.extendedflywheels.orange_iron_flywheel": "Oranžový Železný Zotrvačník",
+
+  "block.extendedflywheels.yellow_iron_flywheel": "Žltý Železný Zotrvačník",
+
+  "block.extendedflywheels.lime_iron_flywheel": "Limetkový Železný Zotrvačník",
+
+  "block.extendedflywheels.green_iron_flywheel": "Zelený Železný Zotrvačník",
+
+  "block.extendedflywheels.cyan_iron_flywheel": "Tyrkysový Železný Zotrvačník",
+
+  "block.extendedflywheels.light_blue_iron_flywheel": "Svetlo Modrý Železný Zotrvačník",
+
+  "block.extendedflywheels.blue_iron_flywheel": "Modrý Železný Zotrvačník",
+
+  "block.extendedflywheels.magenta_iron_flywheel": "Purpurový Železný Zotrvačník",
+
+  "block.extendedflywheels.purple_iron_flywheel": "Fialový Železný Zotrvačník",
+
+  "block.extendedflywheels.pink_iron_flywheel": "Ružový Železný Zotrvačník",
+
+  "block.extendedflywheels.ironflywheel": " Železný Zotrvačník",
+
+
+
+  "block.extendedflywheels.dark_oak_flywheel": "Tmavo Dubový Zotrvačník",
+
+  "block.extendedflywheels.dark_oak_plated_flywheel": "Tmavo Dubový Plátovaný Zotrvačník",
+
+  "block.extendedflywheels.spruce_flywheel": "Smrekový Zotrvačník",
+
+  "block.extendedflywheels.spruce_plated_flywheel": "Smrekový Plátovaný Zotrvačník",
+
+  "block.extendedflywheels.oak_flywheel": "Dubový Zotrvačník",
+
+  "block.extendedflywheels.oak_plated_flywheel": "Dubový Plátovaný  Zotrvačník",
+
+  "block.extendedflywheels.birch_flywheel": "Brezový Zotrvačník",
+
+  "block.extendedflywheels.birch_plated_flywheel": "Brezový Plátovaný Zotrvačník",
+
+  "block.extendedflywheels.jungle_flywheel": "Tropický Zotrvačník",
+
+  "block.extendedflywheels.jungle_plated_flywheel": " Tropický Plátovaný Zotrvačník",
+
+  "block.extendedflywheels.acacia_flywheel": "Akáciový Plátovaný Zotrvačník",
+
+  "block.extendedflywheels.acacia_plated_flywheel": "Akáciový Plátovaný Zotrvačník",
+
+  "block.extendedflywheels.crimson_flywheel": "Karmínový Zotrvačník",
+
+  "block.extendedflywheels.crimson_plated_flywheel": "Karmínový Plátovaný Zotrvačník",
+
+  "block.extendedflywheels.warped_flywheel": "Prízračný Zotrvačník",
+
+  "block.extendedflywheels.warped_plated_flywheel": "Prízračný Plátovaný Zotrvačník",
+
+
+
+  "block.extendedflywheels.large_dark_oak_flywheel": "Veľký Tmavo Dubový Zotrvačník",
+
+  "block.extendedflywheels.large_spruce_flywheel": "Veľký Smrekový Zotrvačník",
+
+  "block.extendedflywheels.large_oak_flywheel": "Veľký Dubový Zotrvačník",
+
+  "block.extendedflywheels.large_birch_flywheel": "Veľký Brezový Zotrvačník",
+
+  "block.extendedflywheels.large_jungle_flywheel": "Veľký Tropický Zotrvačník",
+
+  "block.extendedflywheels.large_acacia_flywheel": " Veľký Akáciový zotrvačník",
+
+  "block.extendedflywheels.large_crimson_flywheel": "Veľký Karmínový Zotrvačník",
+
+  "block.extendedflywheels.large_warped_flywheel": "Veľký Prízračný Zotrrvačník"
+
+}
+
