@@ -3,7 +3,7 @@ loaderVersion="[40,)"
 license="GNU"
 [[mods]] #mandatory
 modId="extendedflywheels"
-version="1.2.4-1.18.2-0.5.e"
+version="1.2.5-1.18.2-0.5.e"
 displayName="Extended Flywheels" #mandatory
 logoFile="logo.png" #optional
 credits=""

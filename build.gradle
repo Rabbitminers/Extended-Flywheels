@@ -21,7 +21,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
 
-version = '1.2.4-1.18.2-0.5.e'
+version = '1.2.5-1.18.2-0.5.e'
 group = 'com.rabbitminers.extendedflywheels' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'extendedflywheels'
 
