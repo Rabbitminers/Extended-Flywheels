@@ -263,16 +263,5 @@ public class WheelBlock extends RotatedPillarKineticBlock implements ITE<WheelTi
     public float getParticleInitialRadius() {
         return 1.75f;
     }
-
-    @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable BlockGetter blockGetter, List<Component> components, TooltipFlag tooltipFlag) {
-        if (Screen.hasShiftDown()) {
-            components.add(new TextComponent("When part of a train:\n").withStyle(ChatFormatting.GRAY).withStyle(ChatFormatting.BOLD));
-            components.add(new TextComponent("To have the flywheel rotate against train tracks (like bogeys), assemble the train facing South or West.\nAssemble the train facing North or East to have the flywheel rotate with the tracks").withStyle(ChatFormatting.DARK_GRAY));
-        } else {
-            components.add(new TextComponent("Press SHIFT for more info").withStyle(ChatFormatting.GRAY));
-        }
-        super.appendHoverText(itemStack, blockGetter, components, tooltipFlag);
-    }
 }
 
