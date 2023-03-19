@@ -1,6 +1,6 @@
-package com.rabbitminers.extendedflywheels.registry;
+package com.rabbitminers.extendedflywheels;
 
-import com.rabbitminers.extendedflywheels.ExtendedFlywheelsBlocks;
+import com.rabbitminers.extendedflywheels.registry.ExtendedFlywheelsBlocks;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

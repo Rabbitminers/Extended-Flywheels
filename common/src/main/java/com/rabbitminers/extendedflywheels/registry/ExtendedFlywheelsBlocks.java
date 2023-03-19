@@ -1,6 +1,6 @@
-package com.rabbitminers.extendedflywheels;
+package com.rabbitminers.extendedflywheels.registry;
 
-import com.rabbitminers.extendedflywheels.registry.ExtendedFlywheels;
+import com.rabbitminers.extendedflywheels.ExtendedFlywheels;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.world.level.block.Block;
