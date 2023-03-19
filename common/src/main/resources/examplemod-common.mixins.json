@@ -6,6 +6,8 @@
   "client": [
   ],
   "mixins": [
+    "MixinAllBlocks",
+    "MixinFlywheelTileEntity"
   ],
   "injectors": {
     "defaultRequire": 1
