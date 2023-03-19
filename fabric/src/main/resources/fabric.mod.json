@@ -1,22 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "extendedflywheels",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Extended Flywheels",
+  "description": "A simple mod to enhance building with create",
   "authors": [
-    "Me!"
+    "Rabbitminers"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
-  "license": "Insert License Here",
+  "license": "GNU GPLv3",
   "icon": "assets/examplemod/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "com.rabbitminers.extendedflywheels.fabric.ExtendedFlywheelsImpl"
     ]
   },
   "mixins": [
@@ -26,7 +26,6 @@
   "depends": {
     "minecraft": "${minecraft_version}",
     "fabricloader": ">=${fabric_loader_version}",
-    "fabric-api": ">=${fabric_api_version}",
-    "create": "${create_version}"
+    "fabric-api": ">=${fabric_api_version}"
   }
 }
