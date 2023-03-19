@@ -1,33 +1,33 @@
 modLoader = "javafml"
 loaderVersion = "[${forge_version},)"
 #issueTrackerURL = ""
-license = "Insert License Here"
+license = "GNU GPLv3"
 
 [[mods]]
-modId = "examplemod"
+modId = "extendedflywheels"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "Extended Flywheels"
+authors = "Rabbitminers"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+A simple mod to enhance building with create.
 '''
 logoFile = "icon.png"
 
-[[dependencies.examplemod]]
+[[dependencies.extendedflywheels]]
 modId = "forge"
 mandatory = true
 versionRange = "[${forge_version},)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.extendedflywheels]]
 modId = "minecraft"
 mandatory = true
 versionRange = "${minecraft_version}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.extendedflywheels]]
 modId="create"
 mandatory=true
 versionRange="${create_version}"
