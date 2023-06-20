@@ -2,22 +2,17 @@ package com.rabbitminers.extendedflywheels.flywheels;
 
 import com.jozufozu.flywheel.core.virtual.VirtualRenderWorld;
 import com.rabbitminers.extendedflywheels.base.FlywheelRotationType;
-import com.simibubi.create.content.contraptions.components.flywheel.FlywheelTileEntity;
-import com.simibubi.create.content.contraptions.components.structureMovement.MovementBehaviour;
-import com.simibubi.create.content.contraptions.components.structureMovement.MovementContext;
-import com.simibubi.create.content.contraptions.components.structureMovement.TranslatingContraption;
-import com.simibubi.create.content.contraptions.components.structureMovement.render.ContraptionMatrices;
-import com.simibubi.create.content.logistics.trains.entity.CarriageBogey;
-import com.simibubi.create.content.logistics.trains.entity.CarriageContraption;
-import com.simibubi.create.content.logistics.trains.entity.CarriageContraptionEntity;
-import com.simibubi.create.foundation.utility.NBTHelper;
+import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
+import com.simibubi.create.content.contraptions.behaviour.MovementContext;
+import com.simibubi.create.content.contraptions.render.ContraptionMatrices;
+import com.simibubi.create.content.trains.entity.CarriageContraption;
+import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.foundation.utility.VecHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
@@ -26,13 +21,13 @@ import java.util.Map;
 
 public class FlywheelMovementBehaviour implements MovementBehaviour {
     @Override
-    public boolean renderAsNormalTileEntity() {
+    public boolean renderAsNormalBlockEntity() {
         return true;
     }
 
     @Nullable
     private IRotatingTileEnity getTileEntity(MovementContext context) {
-        Map<BlockPos, BlockEntity> tes = context.contraption.presentTileEntities;
+        Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
         if (!(tes.get(context.localPos) instanceof IRotatingTileEnity te))
             return null;
         return te;
@@ -42,7 +37,7 @@ public class FlywheelMovementBehaviour implements MovementBehaviour {
     public void renderInContraption(MovementContext context, VirtualRenderWorld renderWorld, ContraptionMatrices matrices, MultiBufferSource buffer) {
         if (!context.world.isClientSide)
             return;
-        Map<BlockPos, BlockEntity> tileEntities = context.contraption.presentTileEntities;
+        Map<BlockPos, BlockEntity> tileEntities = context.contraption.presentBlockEntities;
         if (!(tileEntities.get(context.localPos) instanceof IRotatingTileEnity te))
             return;
         if (Minecraft.getInstance().isPaused())
