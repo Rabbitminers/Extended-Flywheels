@@ -1,12 +1,11 @@
 package com.rabbitminers.extendedflywheels.base;
 
+import com.simibubi.create.foundation.blockEntity.behaviour.scrollValue.INamedIconOptions;
 import com.simibubi.create.foundation.gui.AllIcons;
-import com.simibubi.create.foundation.tileEntity.behaviour.scrollvalue.INamedIconOptions;
 import com.simibubi.create.foundation.utility.Lang;
 
 public enum FlywheelRotationType implements INamedIconOptions {
     DRIVE(AllIcons.I_REFRESH), TRAIL(AllIcons.I_ROTATE_CCW), STATIONARY(AllIcons.I_BLACKLIST),
-
     ;
 
     private String translationKey;

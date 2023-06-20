@@ -1,8 +1,6 @@
 package com.rabbitminers.extendedflywheels.flywheels;
 
-import com.rabbitminers.extendedflywheels.base.FlywheelRotationType;
-
-public interface IRotatingTileEnity {
+public interface IRotatingBlockEnity {
     void setForcedSpeed(float speed);
 
     void unsetForcedSpeed();
